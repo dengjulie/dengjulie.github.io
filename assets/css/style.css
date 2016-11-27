@@ -1,0 +1,265 @@
+body {
+  font-family: 'Mallanna', sans-serif;
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+#header {
+  width: 100%;
+  height: 10%;
+  background-color: cornflowerblue;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  z-index: 100;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: 15px;
+}
+/* is there a way to make it so that decreasing browser size makes it compress*/
+.link {
+  font-family: 'Cabin Sketch';
+  display: inline-block;
+  margin: 20px 40px;
+  padding: 10px;
+  color: cornflowerblue;
+  background-color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 3px 2px 0px midnightblue;
+  -moz-box-shadow: 2px 3px 2px 0px midnightblue;
+  box-shadow:  2px 3px 2px 0px midnightblue;
+  cursor: pointer;
+}
+
+
+
+.container {
+  border-top: solid;
+  border-top-width: 15px;
+  border-color: white;
+  width: 100%;
+  position: absolute;
+  font-size: 30px;
+}
+/*should containers be blocks*/
+#home-container {
+  top: 10%;
+  position: relative;
+  height: calc(90% -15px);
+  height: -webkit-calc(90% - 15px);
+  height: -moz-calc(90% - 15px);
+}
+#education-container {
+  top: 100%;
+  height: calc(100% -15px);
+  height: -webkit-calc(100% - 15px);
+  height: -moz-calc(100% - 15px);
+}
+#ec-container {
+  top: 200%;
+  height: calc(110% -15px);
+  height: -webkit-calc(110% - 15px);
+  height: -moz-calc(110% - 15px);
+}
+#experience-container {
+  top: 310%;
+  height: calc(160% -15px);
+  height: -webkit-calc(160% - 15px);
+  height: -moz-calc(160% - 15px);
+}
+#contact-container {
+  top: 470%;
+  height: 30%;
+  background-color: cornflowerblue;
+}
+/*IT CHANGES SPACING WHEN I SWITCH TO FULL VIEW -- SHOULD PROBABLY DO PIXELS.? wait but how would do that work cause first page must be 100%*/
+
+.overlay {
+  /*position: ;*/
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 200;
+}
+/*can i choose the way the background shifts*/
+#home-overlay {
+  background-image: url("../img/abstract.jpg");
+  opacity: 0.7;
+  /*background-color: gray; ARE THERE TOO MANY PICTURES & JUST LIKE THEYRE RANDOM*/
+}
+#education-overlay {
+  background-image: url("../img/berkeleyedit.jpg");
+  /*MANUALLY LOWERED OPACITY OF IMAGE, BUT HELP ME FIGURE OUT HOW TO DO NORMALLY*/
+}
+#ec-overlay {
+  background-image: url("../img/abstract4edit.jpg");
+}
+#experience-overlay {
+  background-image: url("../img/computeredit.jpg");
+}
+
+
+
+#title {
+  position: absolute;
+  top: 45%;
+  font-size: 120px;
+  z-index: 20;
+  font-family: 'Cabin Sketch';
+  width: 100%;
+}
+/*make dis animated name */
+#sub-title {
+  position: absolute;
+  top: 70%;
+  font-size: 90px;
+  font-family: 'Cabin Sketch';
+  width: 100%;
+  z-index: 20;
+}
+#thumbnail {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 30;
+  border-color: white;
+  border-style: dotted;
+  border-width: 6px;
+}
+
+
+
+.section-title {
+  display: block;
+  float: left;
+  width: 100%;
+  margin: 30px 0 20px 0;
+  z-index: 20;
+  font-family: 'Cabin Sketch';
+  font-size: 54px;
+}
+.section-title:before, .section-title:after {
+  content: "—————";
+  /*help what else can i do? like an image?? */
+}
+ul {
+  text-align: left;
+  display: block;
+  float: left;
+  clear: left;
+  z-index: 20;
+  line-height: 40px;
+  columns: 1;
+  margin: 0px 25% 10px 23%;
+  /*pls margin auto*/
+  width: 50%;
+}
+/*make the list split columns by major bullets?*/
+#education-list {
+  max-height: ;
+  /*how to get max height match w font size*/
+  /*column break how*/
+}
+#ec-list {
+}
+#experience-list {
+
+}
+.major-bullets {
+  font-size: 30px;
+  list-style: none;
+}
+.major-bullets:after {
+  content:"\A";
+}
+.inner-list {
+  margin-left: 60px;
+  font-size: 24px;
+}
+
+
+
+.icon {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+#java {
+  top: 60%;
+  left: 40%;
+}
+#python {
+  top: 61%;
+  left: 55%;
+  height: 90px;
+  width: 90px;
+}
+#html {
+  top: 61%;
+  left: 70%;
+}
+#css {
+  top: 81%;
+  left: 40%;
+}
+#jquery {
+  top: 81%;
+  left: 55%;
+}
+#photoshop {
+  top: 81%;
+  left: 70%;
+
+}
+
+#github {
+  position: absolute;
+  right: 50px;
+  top: 250px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  /*include icon*/
+}
+#github-icon {
+  display: block;
+  clear:left;
+  height: 80px;
+  width: 80px;
+  margin-left: 10px;
+}
+.contact-button {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  font-family: 'Cabin Sketch';
+  display: inline-block;
+  margin: 20px 40px;
+  padding: 10px;
+  color: cornflowerblue;
+  background-color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+#linkedin {
+
+}
+#email {
+
+}
+#facebook {
+
+}

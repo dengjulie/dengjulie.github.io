@@ -1,5 +1,104 @@
 <html>
+  <head>
+    <title>Julie Deng</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Mallanna" rel="stylesheet">
+    <script src="assets/js/script.js"></script>
+  </head>
   <body>
-    LOL SHARON YOU'RE SO AWKWRD
+    <div id="header">
+      <div id = "home-link" class = "link">Home</div>
+      <div id = "education-link" class = "link">Education</div>
+      <div id = "ec-link" class = "link">Extracurricular Activities</div>
+      <div id = "experience-link" class = "link">Experience</div>
+      <div id  ="contaacts-link" class = "link">Contact</div>
+    </div>
+
+    <div id="home-container" class = "container">
+      <div id="home-overlay" class = "overlay"></div>
+      <div id="title">Julie Deng</div>
+      <div id="sub-title">Resumé</div>
+      <img src = "assets/img/icon.jpg" id="thumbnail">
+    </div>
+
+    <div id="education-container" class ="container">
+      <div id="education-overlay" class="overlay">
+      <div class = "section-title">Education</div>
+      <ul id ="education-list">
+        <li class="major-bullets">University of California - Berkeley</li>
+          <li class="inner-list">Intended Major: Computer Science</li>
+          <li class="inner-list">Expected Date of Graduation: May, 2020</li>
+        <li class ="major-bullets">Relevant Coursework</li>
+          <li class="inner-list">CS 61A The Structure and Interpretation of Computer Programs (Python)</li>
+          <li class="inner-list">EE 16A Designing Information Devices and Systems</li>
+          <li class="inner-list">Web Design Decal</li>
+        <li class ="major-bullets">Technical Skills</li>
+          <li class="inner-list">Java</li>
+          <li class="inner-list">Python</li>
+          <li class="inner-list">HTML</li>
+          <li class="inner-list">CSS</li>
+          <li class="inner-list">jQuery</li>
+          <li class="inner-list">Photoshop</li>
+      </ul>
+      <img src = "assets/img/java.png" id ="java" class ="icon">
+      <img src = "assets/img/python.png" id ="python" class ="icon">
+      <img src = "assets/img/html.png" id ="html" class ="icon">
+      <img src = "assets/img/css.png" id ="css" class ="icon">
+      <img src = "assets/img/jquery.png" id ="jquery" class ="icon">
+      <img src = "assets/img/photoshop.png" id ="photoshop" class ="icon">
+      </div>
+    </div>
+
+    <div id="ec-container" class = "container">
+      <div id="ec-overlay" class = "overlay">
+        <div class = "section-title">Extracurricular Activities</div>
+        <ul id ="ec-list">
+          <li class="major-bullets">Association of Women in EECS/CS (2016)</li>
+          <li class="major-bullets">Computer Science Undergraduate Association (2016)</li>
+          <li class="major-bullets">Society of Women in Engineering (2016-present)</li>
+          <li class="major-bullets">CS Kickstart (2016)</li>
+            <li class="inner-list">Explored the field of CS by hearing from CS students, professors, and professionals in the industry, and by visiting Adobe and the Lawrence Berkeley National Laboratory</li>
+            <li class="inner-list">Edited pictures with effects such as blurring, black & white, etc. and created a collage by scaling, cropping, etc. using Jython</li>
+          <li class="major-bullets"><i>President</i> of Mu Alpha Theta (2012-2016)</li>
+            <li class="inner-list">Managed club fund-raisers, recruitment, and the attendance of regional competitions and state convention</li>
+            <li class="inner-list">2015 LA MAΘ State Convention – 10th in the Calculus BC Individual Test & 4th in the Calculus BC Math Bowl Team</li>
+          <li class="major-bullets">Literary/State Rally (2015-2016)</li>
+            <li class="inner-list">Placed 1st at the 2016 Literary Rally for Computer Science</li>
+            <li class="inner-list">Placed 5th at the 2015 Literary Rally for Calculus</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="experience-container" class = "container">
+      <div id="experience-overlay" class ="overlay">
+        <div class = "section-title">Work Experience</div>
+        <ul id ="experience-list">
+          <li class="major-bullets">Projects</li>
+            <li class="inner-list">Redesigned AZ Lyrics using HTML and CSS</li>
+            <li class="inner-list">Developed an interpreter for a subset of the Scheme language</li>
+            <li class="inner-list">Created a tower defense game called Ants vs. SomeBees utilizing functional and object-oriented programming</li>
+            <li class="inner-list">Created a visualization of restaurant ratings (Voronoi diagram) using machine learning and the Yelp academic dataset</li>
+            <li class="inner-list">Developed a simulator and strategies for the dice game Hog using control statements and higher-order functions</li>
+          <li class="major-bullets">Research Intern at the Eisen Lab (University of California, Berkeley (2014-2015)</li>
+            <li class="inner-list">Gathered data to test hypothesis of the direct correlation between the Or22 allele of <i>Drosophila Melanogaster</i> and its ability to detect <i>Saccharomyces cerevisiae</i>. Performed DNA extractions, gel electrophoresis, behavioral assays, PCR, yeast plating, and sequence analysis. </li>
+            <li class="inner-list">Characterized the volatile molecular profile of a variety of carnivore and non-carnivore urines in order to better understand what makes predator urine aversive regarding mice as an intermediate host to <i>Toxoplasma gondii</i>. Used a Gas Chromatography-Mass Spectrometry (GCMS) in order to carry out the headspace gas chromatography technique to quantify volatile organic compounds</li>
+          <li class="major-bullets">Math Tutor (2015-2016)</li>
+            <li class="inner-list">Worked closely with five students ranging from elementary to junior high grade levels</li>
+            <li class="inner-list">Tutored 200+ volunteer hours at Mandeville High School</li>
+        </ul>
+        <a href ="https://github.com/dengjulie" target = "_blank"><div id = "github" class = "link">Github
+          <img src = "assets/img/github.png" class = "icon" id ="github-icon">
+        </div></a>
+      </div>
+    </div>
+
+    <div id ="contact-container" class = "container">
+      <div class = "section-title">Contact</div>
+      <a href ="https://www.linkedin.com/in/juliedeng" target = "_blank"><div id = "linkedin" class = "link" class = "contact-button">LinkedIn</div></a>
+      <a href ="mailto:juliedeng@berkeley.edu" target = "_blank"><div id = "email" class = "link" class = "contact-button">Email</div></a>
+      <a href ="https://facebook.com/juliedeng2007" target = "_blank"><div id = "facebook" class = "link" class = "contact-button">Facebook</div></a>
+    </div>
+<!-- find icons -->
   </body>
 </html>
