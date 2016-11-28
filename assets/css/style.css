@@ -1,6 +1,6 @@
 body {
   font-family: 'Mallanna', sans-serif;
-  background-color: black;
+  background-color: white;
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -10,7 +10,7 @@ body {
 #header {
   width: 100%;
   height: 10%;
-  background-color: cornflowerblue;
+  background-color: #1a214c;
   top: 0px;
   left: 0px;
   position: fixed;
@@ -25,15 +25,21 @@ body {
   display: inline-block;
   margin: 20px 40px;
   padding: 10px;
-  color: cornflowerblue;
+  color: #1a214c;
   background-color: white;
   font-size: 16px;
   letter-spacing: 1px;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 3px 2px 0px midnightblue;
-  -moz-box-shadow: 2px 3px 2px 0px midnightblue;
-  box-shadow:  2px 3px 2px 0px midnightblue;
+  -webkit-box-shadow: 3px 3px 3px 0px #000002;
+  -moz-box-shadow: 3px 3px 3px 0px #000002;
+  box-shadow:  3px 3px 3px 0px #000002;
   cursor: pointer;
+  transition: .5s;
+}
+.link:hover {
+  opacity; 0.5;
+  background-color: #929BC8;
+  color: white;
 }
 
 
@@ -46,9 +52,10 @@ body {
   position: absolute;
   font-size: 30px;
 }
-/*should containers be blocks*/
+/*should containers be blocks (for future reference...)*/
 #home-container {
   top: 10%;
+  background-color: black;
   position: relative;
   height: calc(90% -15px);
   height: -webkit-calc(90% - 15px);
@@ -74,8 +81,8 @@ body {
 }
 #contact-container {
   top: 470%;
-  height: 30%;
-  background-color: cornflowerblue;
+  height: 40%;
+  background-color: #1a214c;
 }
 /*IT CHANGES SPACING WHEN I SWITCH TO FULL VIEW -- SHOULD PROBABLY DO PIXELS.? wait but how would do that work cause first page must be 100%*/
 
@@ -91,7 +98,6 @@ body {
 #home-overlay {
   background-image: url("../img/abstract.jpg");
   opacity: 0.7;
-  /*background-color: gray; ARE THERE TOO MANY PICTURES & JUST LIKE THEYRE RANDOM*/
 }
 #education-overlay {
   background-image: url("../img/berkeleyedit.jpg");
@@ -106,30 +112,45 @@ body {
 
 
 
-#title {
+.title {
   position: absolute;
   top: 45%;
   font-size: 120px;
   z-index: 20;
   font-family: 'Cabin Sketch';
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  transition: 1s;
 }
-/*make dis animated name */
-#sub-title {
+/*eventually animate name */
+.title-shift{
+  transform: translateX(20%);
+  -webkit-transform: translateX(20%);
+  -moz-transform: translateX(20%);
+}
+.sub-title {
   position: absolute;
   top: 70%;
   font-size: 90px;
   font-family: 'Cabin Sketch';
-  width: 100%;
-  z-index: 20;
-}
-#thumbnail {
-  position: absolute;
-  top: 15%;
   left: 50%;
   transform: translateX(-50%);
-  height: 150px;
-  width: 150px;
+  z-index: 20;
+  transition: 1s;
+}
+.sub-title-shift {
+  transform: translateX(30%);
+  -webkit-transform: translateX(30%);
+  -moz-transform: translateX(30%);
+}
+.thumbnail {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 200px;
+  width: 200px;
   object-fit: cover;
   border-radius: 50%;
   padding: 10px;
@@ -137,6 +158,16 @@ body {
   border-color: white;
   border-style: dotted;
   border-width: 6px;
+  cursor: pointer;
+  transition: 1s;
+}
+.thumbnail-shift {
+  height:550px;
+  width:550px;
+  padding: 5px;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
 }
 
 
@@ -166,17 +197,7 @@ ul {
   /*pls margin auto*/
   width: 50%;
 }
-/*make the list split columns by major bullets?*/
-#education-list {
-  max-height: ;
-  /*how to get max height match w font size*/
-  /*column break how*/
-}
-#ec-list {
-}
-#experience-list {
-
-}
+/*make the list split columns by major bullets? if in multiple columns*/
 .major-bullets {
   font-size: 30px;
   list-style: none;
@@ -246,19 +267,39 @@ ul {
   width: 100px;
   font-family: 'Cabin Sketch';
   display: inline-block;
-  margin: 20px 40px;
+  margin: 0 40px;
   padding: 10px;
   color: cornflowerblue;
   background-color: white;
   font-size: 16px;
   letter-spacing: 1px;
   cursor: pointer;
+  -webkit-box-shadow: 3px 3px 3px 0px #000002;
+  -moz-box-shadow: 3px 3px 3px 0px #000002;
+  box-shadow:  3px 3px 3px 0px #000002;
+  border-color: white;
+  border-style: dotted;
+  border-width: 8px;
+  transition: .8s;
+}
+.contact-button:hover {
+  border-color: #3C4577;
+}
+.contact-icon {
+  position: absolute;
+  display: block;
+  clear:left;
+  height: 70px;
+  width: 70px;
+  margin-left: 15px;
+  margin-top: 5px;
 }
 #linkedin {
 
 }
 #email {
-
+  height: 60px;
+  margin-top: 10px;
 }
 #facebook {
 
