@@ -202,9 +202,6 @@ ul {
   font-size: 30px;
   list-style: none;
 }
-.major-bullets:after {
-  content:"\A";
-}
 .inner-list {
   margin-left: 60px;
   font-size: 24px;
