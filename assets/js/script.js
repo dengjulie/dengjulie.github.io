@@ -1,31 +1,53 @@
 $(document).ready(function() {
 
-  $(".home-link").click(function() {
-    var
-    //  isn't there a scroll property
+  $("#home-link").click(function() {
+    $(window).scrollTop(0);
   })
-IF CLICK ON ID OF LINKS
-CHANGE TOP OF THE PAGE TO WHATEVER PERCENT
 
-IF SCROLLING DOWN AND HIT CERTAIN PIXEL
-ANIMATE THINGS TO APPEAR
+  var browserHeight = $(window).height();
+  // console.log(browserHeight);
+  // console.log($("#education-container").attr('height'));
+  // HOW TO DO THIS
+  $("#education-link").click(function() {
+    $(window).scrollTop(0);
+  })
+  $("#ec-link").click(function() {
+    $(window).scrollTop(0);
+  })
+  $("#experience-link").click(function() {
+    $(window).scrollTop(0);
+  })
+  $("#contacts-link").click(function() {
+    $(window).scrollTop(0);
+  })
 
-IF CLICK ON CONTACT INFO LEAD TO LINKS
+  $(".thumbnail").hover(function() {
+    $(".thumbnail").css("border-style", "solid");
+  }, function() {
+    $(".thumbnail").css("border-style", "dotted");
+  })
 
-CREATE ADDITIONAL CLASSES TO ADD/REMOVE
-
-NIGHT MODE AND DAY MODE??? CLICK ON BUTTON IF HAS CLASS NIGHT (OVERLAY) THEN SWITCH ELSE ALSO SWITCH BOTH REMOVE OR ADD class
-
-USE CSS PROPERTY
-
- {
-  constructor() {
-
-  }
-}
-
-}
+  //HOW GET TRANSITION TIME
+  
+  // $(".thumbnail").hover(function() {
+  //   $(".thumbnail").animate({"opacity": "0"}, "slow");
+  //   },
+  //   function() {
+  //   $(".thumbnail").().animate({"border-style": "dotted"}, "slow");
+  // });
 
 
-SHOULD ALSO CHANGE SOME HOVER PROPETIES
-CHECK RUBRIC
+  $(".thumbnail").click(function() {
+    if ($(".thumbnail").hasClass("thumbnail-shift")) {
+      $(".thumbnail").removeClass("thumbnail-shift");
+      $(".title").removeClass("title-shift");
+      $(".sub-title").removeClass("sub-title-shift");
+    }
+    else {
+      $(".thumbnail").addClass("thumbnail-shift");
+      $(".title").addClass("title-shift");
+      $(".sub-title").addClass("sub-title-shift");
+    }
+  })
+
+})

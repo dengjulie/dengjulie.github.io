@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Mallanna" rel="stylesheet">
+    <script src="assets/js/jquery-1.9.1.js"></script>
     <script src="assets/js/script.js"></script>
   </head>
   <body>
@@ -12,14 +13,14 @@
       <div id = "education-link" class = "link">Education</div>
       <div id = "ec-link" class = "link">Extracurricular Activities</div>
       <div id = "experience-link" class = "link">Experience</div>
-      <div id  ="contaacts-link" class = "link">Contact</div>
+      <div id  ="contacts-link" class = "link">Contact</div>
     </div>
 
     <div id="home-container" class = "container">
       <div id="home-overlay" class = "overlay"></div>
-      <div id="title">Julie Deng</div>
-      <div id="sub-title">Resumé</div>
-      <img src = "assets/img/icon.jpg" id="thumbnail">
+      <div class="title">Julie Deng</div>
+      <div class="sub-title">Resumé</div>
+      <img src = "assets/img/icon.jpg" class="thumbnail">
     </div>
 
     <div id="education-container" class ="container">
@@ -95,10 +96,21 @@
 
     <div id ="contact-container" class = "container">
       <div class = "section-title">Contact</div>
-      <a href ="https://www.linkedin.com/in/juliedeng" target = "_blank"><div id = "linkedin" class = "link" class = "contact-button">LinkedIn</div></a>
-      <a href ="mailto:juliedeng@berkeley.edu" target = "_blank"><div id = "email" class = "link" class = "contact-button">Email</div></a>
-      <a href ="https://facebook.com/juliedeng2007" target = "_blank"><div id = "facebook" class = "link" class = "contact-button">Facebook</div></a>
+      <div class = "contact-button">LinkedIn
+        <a href ="https://www.linkedin.com/in/juliedeng" target = "_blank">
+        <img src = "assets/img/linkedin.png" class = "contact-icon" id ="linkedin">
+        </a>
+      </div>
+      <div class = "contact-button">Email
+        <a href ="mailto:juliedeng@berkeley.edu" target = "_blank">
+        <img src = "assets/img/gmail.png" class = "contact-icon" id="email">
+        </a>
+      </div>
+      <div class = "contact-button">Facebook
+        <a href ="https://facebook.com/juliedeng2007" target = "_blank">
+        <img src = "assets/img/facebook.png" class = "contact-icon" id="facebook">
+        </a>
+      </div>
     </div>
-<!-- find icons -->
   </body>
 </html>
