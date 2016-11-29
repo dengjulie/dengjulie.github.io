@@ -24,7 +24,6 @@ $(document).ready(function() {
 
 
   $(".thumbnail,#zoomin,#zoomout").hover(function() {
-    $(".thumbnail").css("border-style", "dotted");
     $(".thumbnail").css("opacity", ".8");
     if ($(".thumbnail").hasClass("thumbnail-shift")) {
       $("#zoomout").show();
@@ -33,7 +32,6 @@ $(document).ready(function() {
       $("#zoomin").show();
     }
   }, function() {
-    $(".thumbnail").css("border-style", "solid");
     $(".thumbnail").css("opacity", "1");
     if ($(".thumbnail").hasClass("thumbnail-shift")) {
       $("#zoomout").hide();
@@ -45,17 +43,7 @@ $(document).ready(function() {
     }
   })
 
-
-  //HOW GET TRANSITION TIME
-
-  // $(".thumbnail").hover(function() {
-  //   $(".thumbnail").animate({"opacity": "0"}, "slow");
-  //   },
-  //   function() {
-  //   $(".thumbnail").().animate({"border-style": "dotted"}, "slow");
-  // });
-
-
+  
   $(".thumbnail").click(function() {
     if ($(".thumbnail").hasClass("thumbnail-shift")) {
       $(".thumbnail").removeClass("thumbnail-shift");

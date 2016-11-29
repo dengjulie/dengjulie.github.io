@@ -151,7 +151,7 @@ body {
   padding: 10px;
   z-index: 30;
   border-color: white;
-  border-style: solid;
+  border-style: dotted;
   border-width: 6px;
   cursor: pointer;
   transition: 1s;
@@ -188,7 +188,8 @@ body {
   background-size: contain;
   cursor:pointer;
 }
-/*UHMMMM*/
+
+
 
 .section-title {
   display: block;
@@ -201,7 +202,6 @@ body {
 }
 .section-title:before, .section-title:after {
   content: "—————";
-  /*help what else can i do? like an image?? */
 }
 ul {
   text-align: left;
@@ -212,10 +212,8 @@ ul {
   line-height: 40px;
   columns: 1;
   margin: 0px 25% 10px 23%;
-  /*pls margin auto*/
   width: 50%;
 }
-/*make the list split columns by major bullets? if in multiple columns*/
 .major-bullets {
   font-size: 30px;
   list-style: none;
