@@ -145,9 +145,9 @@ body {
   -moz-transition: 1s;
 }
 .sub-title-shift {
-  transform: translateX(30%);
-  -webkit-transform: translateX(30%);
-  -moz-transform: translateX(30%);
+  transform: translateX(20%);
+  -webkit-transform: translateX(20%);
+  -moz-transform: translateX(20%);
 }
 .thumbnail {
   position: absolute;
